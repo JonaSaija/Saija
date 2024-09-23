@@ -1,1 +1,53 @@
-hey world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jona Saija</title>
+    <link rel="stylesheet" href="./code/css/mainStylesheet.css">
+    <link rel="stylesheet" href="./code/css/indexStylesheet.css">
+</head>
+<body>
+
+    <div class="bannerDiv">
+        <div class="welcomeText">
+            <h1>Hey this is a new port website.</h1>
+            <!-- Use a button to pause/play the video with JavaScript -->
+        </div>
+        
+        
+        <!-- banner video-->
+        <video autoplay muted loop id="bannerVideo">
+            <source src="./assets/videos/LinkStart.mp4" type="video/mp4">
+        </video>
+
+       
+    </div>
+
+    <button class="videoPause" id="pauseBannerBtn" onclick="toggleVideo()">Pause</button>            
+    
+            
+    
+    <script>
+        // Set banner video on pause and play
+        document.addEventListener("DOMContentLoaded", function () {
+
+            var bannerVideo = document.getElementById('bannerVideo')
+            var buttonPause = document.getElementById('pauseBannerBtn')
+            
+            function toggleVideo(){
+                if(bannerVideo.paused){
+                    bannerVideo.play();
+                    buttonPause.innerText = 'Pause video';
+                }else{
+                    bannerVideo.pause();
+                    buttonPause.innerText = 'Play video'
+                }
+            }
+
+            buttonPause.addEventListener('click', toggleVideo)
+        })
+        
+    </script>
+</body>
+</html>

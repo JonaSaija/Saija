@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    width: auto;
+    height: 98vh;
+}
+
+#pauseBannerBtn{
+    position: absolute;
+    bottom: 0%;
+}
+
+.bannerDiv{
+    height: 30%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.videoPause{
+    margin: 1%;
+}
+
+.welcomeText{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 35.56%;
+    left: 30.63%;
+}
