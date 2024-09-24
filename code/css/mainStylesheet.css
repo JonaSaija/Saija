@@ -1,11 +1,11 @@
-/* COLOR PALLET IS
-#D7DDDD = WHITE/GREY
-#2D2045 = DARK DEEP PURPLE
-#54415E = DARK BEIGE PURPLE
-#834D70 = LIGHT BEIGE PURPLE
-#A0838D = LIGHT BROWN PURPLE
-*/
+:root{
+    --ghost-white: #F8FAFEff;
+    --smoky-black: #161210ff;
+    --night: #0A0A09ff;
+    --black-bean: #38130Dff;
+    --vermilion: #F93335ff;
+}
 
 h1, h2, h3, h4, h5{
-    color: #2D2045;
+    color: var(--vermilion);
 }

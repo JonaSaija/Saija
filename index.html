@@ -13,42 +13,91 @@
         <div class="welcomeText">
             <h1>Hey this is a new port website.</h1>
             <!-- Use a button to pause/play the video with JavaScript -->
-            <button class="videoPause" id="pauseBannerBtn" onclick="toggleVideo()">Pause</button>            
-            <ul>
+            <ul class="navLinksUl">
                 <li>
-                    <a href="#section1">Test</a>
+                    <a href="#section1">About</a>
                 </li>
                 <li>
-                    <a href="#section2">Test</a>
+                    <a href="#section2">Experience</a>
                 </li>
                 <li>
-                    <a href="#section3">Test</a>
+                    <a href="#section3">Project's</a>
                 </li>
                 <li>
-                    <a href="#section4">Test</a>
+                    <a href="#section4">Don't know</a>
                 </li>
             </ul>
         </div>
-        
+
+        <button class="videoPause" id="pauseBannerBtn" onclick="toggleVideo()">Pause</button>            
         
         <!-- banner video-->
         <video autoplay muted loop id="bannerVideo" class="placeHolderVideo">
-            <!-- <source src="./assets/videos/LinkStart.mp4" type="video/mp4"> -->
+            <source src="./assets/videos/game.mp4" type="video/mp4">
         </video>
 
        
     </div>
 
-    <section class="testContent">
-
+    <section class="testContent" id="section1">
+        <div id="aboutContent" class="contentSectionStyling" ></div>
     </section>
     
-    <section class="test2Content">
-
+    <section class="test2Content" id="section2">
+        <div id="experienceContent class="contentSectionStyling" ></div>
     </section>
 
+    <section class="testContent" id="section3">
+        <div id="projectsContent" class="contentSectionStyling" ></div>
+    </section>
     
-            
+    <section class="test2Content" id="section4">
+        <div id="dontKnowContent" class="contentSectionStyling" ></div>
+    </section>
+
+    <script>
+        window.onload = function() {
+            fetch('./code/html/about.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('aboutContent').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading aboutContent:', error);
+                document.getElementById('aboutContent').innerHTML = '<p>Failed to load aboutContent.</p>';
+            });
+
+            // fetch('./code/html/experience.html')
+            // .then(response => response.text())
+            // .then(data => {
+            //     document.getElementById('experienceContent').innerHTML = data;
+            // })
+            // .catch(error => {
+            //     console.error('Error loading experienceContent:', error);
+            //     document.getElementById('experienceContent').innerHTML = '<p>Failed to load experienceContent.</p>';
+            // });
+
+            fetch('./code/html/projects.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('projectsContent').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading projectsContent:', error);
+                document.getElementById('projectsContent').innerHTML = '<p>Failed to load projectsContent.</p>';
+            });
+
+            fetch('./code/html/dontKnow.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('dontKnowContent').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading dontKnowContent:', error);
+                document.getElementById('dontKnowContent').innerHTML = '<p>Failed to load dontKnowContent.</p>';
+            });
+        };
+    </script>            
     
     <script>
         // Set banner video on pause and play
@@ -60,10 +109,10 @@
             function toggleVideo(){
                 if(bannerVideo.paused){
                     bannerVideo.play();
-                    buttonPause.innerText = 'Pause video';
+                    buttonPause.innerText = 'Pause';
                 }else{
                     bannerVideo.pause();
-                    buttonPause.innerText = 'Play video'
+                    buttonPause.innerText = 'Play'
                 }
             }
 
