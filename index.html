@@ -29,10 +29,10 @@
             </ul>
         </div>
 
-        <button class="videoPause" id="pauseBannerBtn" onclick="toggleVideo()">Pause</button>            
+        <button class="videoPause" id="pauseBannerBtn">Pause</button>            
         
         <!-- banner video-->
-        <video autoplay muted loop id="bannerVideo" class="placeHolderVideo">
+        <video autoplay loop id="bannerVideo" class="placeHolderVideo">
             <source src="./assets/videos/game.mp4" type="video/mp4">
         </video>
 
@@ -99,6 +99,17 @@
         };
     </script>            
     
+    <script>
+        // Set custom volume for the video
+        const videoElement = document.getElementById('bannerVideo');
+        
+        // Set the volume (range is 0.0 to 1.0, with 1.0 being the maximum volume)
+        videoElement.volume = 0.5; // Set volume to 50%
+    
+        // Optionally, you can add controls for user interaction if needed
+        videoElement.controls = true;
+    </script>
+
     <script>
         // Set banner video on pause and play
         document.addEventListener("DOMContentLoaded", function () {
