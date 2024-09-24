@@ -1,0 +1,23 @@
+{
+    "en": {
+      "sitename": "Jona Saija",
+      "home": "Home",
+      "about": "About",
+      "resume": "Resume",
+      "portfolio": "Portfolio",
+      "birthday": "Birthday:",
+      "phone": "Phone:",
+      "city": "City:",
+      "degree": "Degree:",
+      "email": "Email:",
+      "age": "Age",
+      "hero_title": "Jona Saija",
+      "hero_description": "I'm a <span class='typed' data-typed-items='Designer, Developer, Photographer, Gamer'>Designer</span>",
+      "about_section_title": "About",
+      "about_description": "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.",
+      "skills_section_title": "Skills",
+      "skills_description": "Some code languages that I have used in my time of programming and some useful Adobe apps.",
+      "resume_section_title": "Resume",
+      "resume_description": "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
+    }
+  }
