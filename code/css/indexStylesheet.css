@@ -54,6 +54,7 @@ section{
     width: 100%;
     background-color: var(--ghost-white);
     background-size: auto;
+    pointer-events: none;
 }
 
 .testContent{
